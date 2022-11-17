@@ -16,7 +16,7 @@ app.use(morgan('tiny'));
 
 db.authenticate()
   .then(() => {
-    db.sync({ alter: true });
+    // db.sync({ force: true, alter: true });
     console.log('[DB] Connection has been established successfully.');
   })
   .catch((error) => {
